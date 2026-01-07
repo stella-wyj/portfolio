@@ -1,0 +1,91 @@
+
+.code-section {
+    background-color: #f3f3f3;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.code-box {
+    margin-top: 30px;
+    margin-left: 30px;
+    background: #1e1e2e;
+    color: #f8f8f2;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.code-header {
+    background: #2d2d3f;
+    color: #a0a0a0;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 1px solid #3d3d4f;
+    text-align: left;
+}
+
+/* ===== CODE CONTENT STYLING ===== */
+.code-content {
+    background: #1e1e2e;
+    margin: 0;
+    border-radius: 0 0 15px 15px;
+    overflow-x: auto;
+    overflow-y: scroll;
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+    text-align: left;
+    tab-size: 4;
+    -moz-tab-size: 4;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: 250px;
+}
+
+.code-content pre {
+    background: #1e1e2e;
+    line-height: 2.0;
+    margin: 0;
+}
+
+.code-content code {
+    background: transparent;
+    font-size: 14px;
+    color: inherit;
+    padding: 0;
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+    display: block;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 2.0;
+}
+
+/* ===== PRISM OVERRIDES ===== */
+/* had to check this by inspecting website */
+code[class*="language-"],
+pre[class*="language-"] {
+    background: #1e1e2e !important;
+}
+
+.code-content code[class*="language-"],
+.code-content pre[class*="language-"],
+.code-content code[class*="language-"] {
+    background: #1e1e2e !important;
+}
+
+/* apply font */
+.code-content .token,
+.code-content [class*="token"] {
+    background: transparent !important;
+    text-shadow: none !important;
+    font-family: "Consolas", "Monaco", "Courier New", monospace !important;
+    line-height: 2.0;
+}
+
+

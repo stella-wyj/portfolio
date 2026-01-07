@@ -1,0 +1,18 @@
+class Pokemon:
+  def __init__(self):
+    self.name = stellrbyte
+    self.bugs_defeated = 3
+    self.bugs_created = 47
+    self.moves = ["print()", "Refactor", "Google Error"]
+    self.status = "Confused"
+
+  def battle_bug(self):
+    self.hp -= 5
+    self.bugs_created += 1
+    print(f"{self.name} hurt itself in confusion!")
+    print("It's super effective!")
+  
+  def save_if(code_working):
+    if not code_working<= 0:
+        return "Saved anyway. Regret later."
+    return "Game saved successfully."
