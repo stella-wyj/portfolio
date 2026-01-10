@@ -40,8 +40,6 @@
     overflow-y: scroll;
     font-family: "Consolas", "Monaco", "Courier New", monospace;
     text-align: left;
-    tab-size: 4;
-    -moz-tab-size: 4;
     max-width: 100%;
     box-sizing: border-box;
     height: 250px;
