@@ -48,8 +48,6 @@
     background: #1e1e2e;
     line-height: 2.0;
     margin: 0;
-    white-space: pre-wrap;
-    word-break: break-word;
 }
 
 .code-content code {
