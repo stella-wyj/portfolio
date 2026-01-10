@@ -129,17 +129,14 @@ function handleScrollSlide() {
 handleScrollSlide();
 window.addEventListener('scroll', handleScrollSlide);
 
-// ------------------ the code snippet upload, i have it in a separate txt file ---------- //
-// its not working rn idk why ill figure out later
-
-fetch('./resources/code-snippet.txt')
-    .then(response => response.text())
-    .then(code => {
-        const codeDisplay = document.getElementById('code-display');
-        codeDisplay.innerText = code;
+// ------------------ CODE HIGHLIGHTING ------------------ //
+// Just highlight the code that's already in the HTML
+document.addEventListener('DOMContentLoaded', () => {
+    const codeDisplay = document.getElementById('code-display');
+    if (codeDisplay) {
         Prism.highlightElement(codeDisplay);
-    })
-    .catch(error => console.error('Error loading code file:', error));
+    }
+});
 
 
 //----------------------------- timeline fill ------------------------------- //
